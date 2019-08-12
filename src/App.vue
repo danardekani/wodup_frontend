@@ -7,6 +7,7 @@
       <router-link to="/signup">Sign Up</router-link> |
       <router-link to="/login">Login</router-link> |
       <router-link to="/logout">Logout</router-link> |
+      <router-link to="/addworkout">Add Workout</router-link> 
     </div>
     <router-view/>
   </div>

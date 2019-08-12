@@ -4,7 +4,7 @@ import Home from './views/Home.vue';
 import Signup from './views/Signup.vue';
 import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
-import Wodup from "./views/Wodup.vue";
+import AddWorkout from './views/AddWorkout.vue';
 
 Vue.use(Router);
 
@@ -33,9 +33,9 @@ export default new Router({
       component: Logout 
     },
     {
-      path: "/wodup", 
-      name: "wodup", 
-      component: Wodup 
+      path: "/addworkout",
+      name: 'addworkout',
+      component: AddWorkout
     },
     {
       path: '/about',
