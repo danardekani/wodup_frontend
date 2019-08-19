@@ -8,17 +8,20 @@
       reps: <input type="text" v-model="newWorkoutReps">
       notes: <input type="text" v-model="newWorkoutNotes">
       time: <input type="text" v-model="newWorkoutTime">
+      <hr>
       <button v-on:click="createNewWorkout()">Add Workout</button>
     </div>
-    <!-- <h1>Add Workout</h1> -->
+
     <div v-for="workout in workouts">
       <h2>{{ workout.name }}</h2>
       <p>name: {{ workout.name }}</p>
       <p>workout_type: {{ workout.workout_type }}</p>
-      <p>weight: {{ workout.weight }}</p>
-      <p>reps: {{ workout.reps }}</p>
-      <p>notes: {{ workout.notes }}</p>
-      <p>time: {{ workout.time }}</p>
+      <div v-for="user_workout in workout.user_workouts">
+        <p>weight: {{ user_workout.weight }}</p>
+        <p>reps: {{ user_workout.reps }}</p>
+        <p>notes: {{ user_workout.notes }}</p>
+        <p>time: {{ user_workout.time }}</p>
+      </div>
     </div>
   </div>
 </template>

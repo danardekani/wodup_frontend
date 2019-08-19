@@ -5,6 +5,7 @@ import Signup from './views/Signup.vue';
 import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import AddWorkout from './views/AddWorkout.vue';
+import WodUp  from './views/WodUp.vue';
 
 Vue.use(Router);
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/wodup',
+      name: 'wodup',
+      component: WodUp
     },
     {
       path: '/signup',
