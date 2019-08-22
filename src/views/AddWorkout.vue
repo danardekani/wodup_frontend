@@ -54,7 +54,7 @@ export default {
         weight: this.newWorkoutWeight,
         reps: this.newWorkoutReps,
         notes: this.newWorkoutNotes,
-        Time: this.newWorkoutTime
+        time: this.newWorkoutTime
       };
       axios.post("/api/workouts", params).then(response => {
         this.newWorkoutName = "";

@@ -6,6 +6,7 @@ import Login from "./views/Login.vue";
 import Logout from "./views/Logout.vue";
 import AddWorkout from './views/AddWorkout.vue';
 import WodUp  from './views/WodUp.vue';
+import Leaderboard from './views/Leaderboard.vue';
 
 Vue.use(Router);
 
@@ -17,6 +18,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Home
+    },
+    {
+      path: '/leaderboard',
+      name: 'leaderboard',
+      component: Leaderboard
     },
     {
       path: '/wodup',
