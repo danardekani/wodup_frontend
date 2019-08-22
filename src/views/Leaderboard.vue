@@ -4,9 +4,9 @@
       <div v-for="user_workout in user_workouts">
         <p>Athlete: {{ user_workout.name }} </p>
         <p>Weight: {{ user_workout.weight }}</p>
-        <p>Reps: {{ user_workout.reps }}</p>
+ <!--        <p>Reps: {{ user_workout.reps }}</p>
         <p>Notes: {{ user_workout.notes }}</p>
-        <p>Time: {{ user_workout.time }}</p>
+        <p>Time: {{ user_workout.time }}</p> -->
     </div>
   </div>
 </template>
