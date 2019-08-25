@@ -3,6 +3,7 @@
     <h1>Leaderboard</h1>
       <div v-for="user_workout in user_workouts">
         <p>Athlete: {{ user_workout.first_name }} {{ user_workout.last_name }}</p>
+        <p>Workout: {{ user_workout.name }} </p>
         <p>Weight: {{ user_workout.weight }}</p>
         <p>Notes: {{ user_workout.notes }}</p>
         <p>Time: {{ user_workout.time }}</p> 
