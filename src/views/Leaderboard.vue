@@ -1,6 +1,13 @@
 <template>
   <div class="container"> 
     <h1>Leaderboard</h1>
+    <select v-model="user_workouts" v-on:change="">
+      <option disabled value="">Workouts</option>
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+      <option>D</option> 
+    </select>
       <div v-for="user_workout in user_workouts">
         <p>Athlete: {{ user_workout.first_name }} {{ user_workout.last_name }}</p>
         <p>Workout: {{ user_workout.name }} </p>
