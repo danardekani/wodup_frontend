@@ -1,5 +1,11 @@
 <template>
   <div class="container"> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     <h1>Leaderboard</h1>
     <select v-model="user_workouts" v-on:change="sortBy()">
       <option text="Strength" >Strength</option>
@@ -36,7 +42,7 @@ export default {
   methods: {
     sortBy: function() {
       console.log(this.user_workouts);
-      axios.get("/api/user_workouts?workout_id=44").then(response => {
+      axios.get("/api/user_workouts?workout_id=43").then(response => {
         this.user_workouts = response.data;
       });
     },
