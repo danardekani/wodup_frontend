@@ -1,10 +1,5 @@
 <template>
   <div class="container">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
     <h1>Add Workout</h1>
     <div>
       <div class="form-group col-md-6">
@@ -17,7 +12,7 @@
         <input type="text" class="form-control" v-model="newWorkoutWeight" placeholder="Weight">
       </div> 
       <div class="form-group col-md-6">
-        <input type="text" class="form-control" v-model="newWorkoutWeight" placeholder="Reps">
+        <input type="text" class="form-control" v-model="newWorkoutReps" placeholder="Reps">
       </div>
       <div class="form-group col-md-6">
         <input type="text" class="form-control" v-model="newWorkoutNotes" placeholder="Notes">
@@ -28,8 +23,6 @@
       <button class="btn btn-lg btn-primary ml-auto" v-on:click="createNewWorkout()">Add Workout</button>
       <br>
     </div>
-    <br>
-    <br>
       <!-- <div v-for="workout in workouts">
         <h2>{{ workout.name }}</h2>
         <p>name: {{ workout.name }}</p>

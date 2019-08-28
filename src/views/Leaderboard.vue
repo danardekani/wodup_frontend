@@ -7,9 +7,9 @@
     <br>
     <br>
     <h1>Leaderboard</h1>
-    <select v-model="user_workouts" v-on:change="sortBy()">
+    <select v-model="user_workouts" v-on:change="leaderBoardFilter()">
       <option text="Strength" >Strength</option>
-      <option>Deadlift</option>
+      <option>Dead lift</option>
       <option>Bench Press</option>
       <option>Push Press</option>
       <option>Back Squat</option> 
@@ -40,12 +40,12 @@ export default {
     });
   },
   methods: {
-    sortBy: function() {
+    leaderBoardFilter: function() {
       console.log(this.user_workouts);
       axios.get("/api/user_workouts?workout_id=43").then(response => {
         this.user_workouts = response.data;
       });
-    },
+    }
   }
 }; 
 
