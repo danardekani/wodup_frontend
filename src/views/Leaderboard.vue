@@ -8,12 +8,12 @@
     <br>
     <h1>Leaderboard</h1>
     <select v-model="user_workouts" v-on:change="leaderBoardFilter()">
-      <option text="Strength" >Strength</option>
+      <option value="" disabled selected>Workout</option>
       <option value="43">Dead lift</option>
       <option value="44">Bench Press</option>
       <option value="45">Push Press </option>
-<!--       <option>Back Squat</option> 
-      <option>Front Squat</option>  -->
+      <option value="101">Front Squat</option> 
+      <option value="102">Back Squat</option> 
     </select>
       <div v-for="user_workout in user_workouts">
         <p>Athlete: {{ user_workout.first_name }} {{ user_workout.last_name }}</p>

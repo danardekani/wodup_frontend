@@ -11,15 +11,21 @@
     <div>
       <div class="form-group col-md-6">
         <select placeholder="Workout Name" class="form-control" v-model="newWorkoutName">
+          <option value="" disabled selected>Workout Name</option>
           <option value="43">Dead lift</option>
           <option value="44">Bench Press</option>
           <option value="45">Push Press </option>
-          <option>Back Squat</option> 
-          <option>Front Squat</option> 
+          <option value="101">Front Squat</option> 
+          <option value="102">Back Squat</option> 
         </select>
       </div> 
-        <div class="form-group col-md-6">
-          <input type="text" class="form-control" v-model="newWorkoutType" placeholder="Workout Type">
+        <div class="form-group col-md-6" >
+          <select type="text" class="form-control" v-model="newWorkoutType" >
+            <option value="" disabled selected>Workout Type</option>
+            <option>Strength</option>
+          </select>
+        </div>
+<!--           <input type="text" class="form-control" v-model="newWorkoutType" placeholder="Workout Type"> -->
         </div> 
         <div class="form-group col-md-6">
           <input type="text" class="form-control" v-model="newWorkoutWeight" placeholder="Weight">
