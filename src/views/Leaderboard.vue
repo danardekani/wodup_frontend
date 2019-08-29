@@ -9,11 +9,11 @@
     <h1>Leaderboard</h1>
     <select v-model="user_workouts" v-on:change="leaderBoardFilter()">
       <option text="Strength" >Strength</option>
-      <option>Dead lift</option>
-      <option>Bench Press</option>
-      <option>Push Press</option>
-      <option>Back Squat</option> 
-      <option>Front Squat</option> 
+      <option value="43">Dead lift</option>
+      <option value="44">Bench Press</option>
+      <option value="45">Push Press </option>
+<!--       <option>Back Squat</option> 
+      <option>Front Squat</option>  -->
     </select>
       <div v-for="user_workout in user_workouts">
         <p>Athlete: {{ user_workout.first_name }} {{ user_workout.last_name }}</p>
@@ -42,7 +42,7 @@ export default {
   methods: {
     leaderBoardFilter: function() {
       console.log(this.user_workouts);
-      axios.get("/api/user_workouts?workout_id=43").then(response => {
+      axios.get("/api/user_workouts?workout_id=" + this.user_workouts).then(response => {
         this.user_workouts = response.data;
       });
     }
