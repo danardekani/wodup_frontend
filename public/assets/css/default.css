@@ -272,3 +272,33 @@ ul.nav-tabs .nav-item .nav-link.active {
 .svgLogo2 .cls-2 {
   fill: #31d19e;
 }
+
+/*=== Login ===*/
+#login-spacing {
+  margin-top: 70px;
+  margin-bottom: 22px
+}
+
+/*=== SignUp ===*/
+#signup-spacing {
+  margin-top: 125px;
+  margin-bottom: 25px;
+}
+#first-name-signup {
+  margin-top: 13px;
+}
+
+/*=== AddWorkout ===*/
+#add-workout-padding {
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+#workout-name-padding {
+  margin-top: 15px;
+}
+
+/*=== Leaderboard ===*/
+#leaderboard-padding {
+  margin-top: 120px;
+  margin-bottom: 50px;
+}
