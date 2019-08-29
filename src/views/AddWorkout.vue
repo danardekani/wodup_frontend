@@ -1,9 +1,9 @@
 <template>
   <div class="container">
     <div id="add-workout-padding">      
-      <h1> Add Workout </h1>
+      <h1 id="h1-padding"> Add Workout </h1>
         <div id="workout-name-padding">
-          <div class="form-group col-md-6">
+          <div id="work" class="form-group col-md-6">
             <select placeholder="Workout Name" class="form-control" v-model="newWorkoutName">
               <option value="" disabled selected>Workout Name</option>
               <option value="43">Dead lift</option>

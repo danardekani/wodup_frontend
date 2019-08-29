@@ -10,9 +10,6 @@
       <section class="section-padding" id="about">
         <div class="container">
           <div class="row justify-content-between">
-<!--             <div class="col-lg-5 col-12 col-md-6 wow tafFadeInLeft ">
-              <img class="img-style-one d-none d-md-block" src="logo_size.jpg" alt="Image" width="530" height="450">
-            </div> -->
             <div class="col-lg-6 col-12 col-md-6">
               <h3 class="section-title m-mt-20"> <span class="rev">Welcome to WodUp</span></h3>
               <p class="mt-2">WodUp was built for athletes to compete on a global scale whenever and wherever they want. Create a profile, submit your scores, and see how you stack up. Are you game?</p>
