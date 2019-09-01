@@ -37,9 +37,6 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto site_nav scrolling" >
             <li class="nav-item dropdown d-none d-md-block">
-<!--               <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Demo
-              </a> -->
             </li>
             <li class="nav-item">
               <a class="nav-link " href="/wodup"> WodUp</a>
@@ -60,7 +57,7 @@
               <a class="nav-link" href="/logout">logout</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="/vue-google-signin-button">Google</a>
+              <a class="nav-link" href="/Google">Google</a>
             </li>
           </ul>
         </div>

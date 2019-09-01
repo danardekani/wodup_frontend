@@ -7,8 +7,7 @@ import Logout from "./views/Logout.vue";
 import AddWorkout from './views/AddWorkout.vue';
 import WodUp  from './views/WodUp.vue';
 import Leaderboard from './views/Leaderboard.vue';
-import GSignInButton from 'vue-google-signin-button';
-Vue.use(GSignInButton);
+import Google from './views/Google.vue';
 Vue.use(Router);
 
 export default new Router({
@@ -21,14 +20,14 @@ export default new Router({
       component: Home
     },
     {
-      path: '/vue-google-signin-button',
-      name: 'vue-google-signin-button',
-      component: GSignInButton
-    },
-    {
       path: '/leaderboard',
       name: 'leaderboard',
       component: Leaderboard
+    },
+    {
+      path: '/google',
+      name: 'google',
+      component: Google
     },
     {
       path: '/wodup',

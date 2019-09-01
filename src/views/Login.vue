@@ -65,4 +65,19 @@ export default {
   }
 };
 </script>
-
+<!-- 
+**** GOOGLE **** -->
+<!-- <script type="text/javascript">
+  
+this.$gAuth.getAuthCode()
+.then(authCode => {
+  //on success
+  return this.$http.post('localhost:3000/auth/google', { code: authCode, redirect_uri: 'postmessage' })
+})
+.then(response => {
+  //after ajax
+})
+.catch(error => {
+  //on fail do something
+})
+</script> -->
