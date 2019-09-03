@@ -57,7 +57,7 @@
               <a class="nav-link" href="/logout">logout</a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link" href="/Google">Google</a>
+              <a class="nav-link" href="/google">Google</a>
             </li>
           </ul>
         </div>
