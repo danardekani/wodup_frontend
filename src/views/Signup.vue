@@ -3,7 +3,7 @@
     <div class="container">
       <div id="signup-spacing">
         <form v-on:submit.prevent="submit()">
-          <h1>Signup</h1>
+          <h1>Sign Up</h1>
           <ul>
             <li class="text-danger" v-for="error in errors">{{ error }}</li>
           </ul>
@@ -63,7 +63,10 @@ export default {
           this.$router.push("/login");
         })
         .catch(error => {
-          this.errors = error.response.data.errors;
+          this.errors = ["Invalid user information"];
+          // this.errors = error.response.data.errors;
+          this.email = "";
+          this.password = "";
         });
     }
   }
