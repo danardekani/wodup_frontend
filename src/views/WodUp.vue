@@ -17,7 +17,10 @@
                 <li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Access to Global Leaderboard</li>
                 <li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Always Free</li>
               </ul>
-              <a href="/signup" class="btn btn-primary btn-strock mt-5">Sign Up</a>
+              <div class="home-login-button">  
+                <a href="/login" class="btn btn-primary btn-strock mt-5" style="margin: 5px">Login</a>
+                <a href="/signup" class="btn btn-primary btn-strock mt-5" style="margin: 5px">Sign Up</a>
+              </div>
             </div>
           </div>
         </div>

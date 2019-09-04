@@ -63,7 +63,10 @@ export default {
           this.$router.push("/login");
         })
         .catch(error => {
-          this.errors = error.response.data.errors;
+          this.errors = ["Invalid user information"];
+          // this.errors = error.response.data.errors;
+          this.email = "";
+          this.password = "";
         });
     }
   }
