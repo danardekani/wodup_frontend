@@ -64,6 +64,9 @@ export default {
         })
         .catch(error => {
           this.errors = error.response.data.errors;
+          this.errors = ["Password and password confirmation do not match."];
+          this.password_confirmation = "";
+          this.password = "";
         });
     }
   }
