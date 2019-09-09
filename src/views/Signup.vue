@@ -3,7 +3,7 @@
     <div class="container">
       <div id="signup-spacing">
         <form v-on:submit.prevent="submit()">
-          <h1>Signup</h1>
+          <h1>Sign Up</h1>
           <ul>
             <li class="text-danger" v-for="error in errors">{{ error }}</li>
           </ul>
@@ -63,9 +63,15 @@ export default {
           this.$router.push("/login");
         })
         .catch(error => {
+<<<<<<< HEAD
           this.errors = error.response.data.errors;
           this.errors = ["Password and password confirmation do not match."];
           this.password_confirmation = "";
+=======
+          this.errors = ["Invalid user information"];
+          // this.errors = error.response.data.errors;
+          this.email = "";
+>>>>>>> 7e98154ccc4957b8c886877427f8131917fe4361
           this.password = "";
         });
     }

@@ -18,6 +18,7 @@
             <select type="text" class="form-control" v-model="newWorkoutType" >
               <option value="" disabled selected>Workout Type</option>
               <option>Strength</option>
+              <option>Endurance</option>
             </select>
           </div>
           <div class="form-group col-md-6">
@@ -32,7 +33,7 @@
           <div class="form-group col-md-6">
             <input type="text" class="form-control" v-model="newWorkoutTime" placeholder="Time">
           </div>
-        <button class="btn btn-lg btn-primary ml-auto" v-on:click="createNewWorkout()">Add Workout</button>
+            <button class="btn btn-lg btn-primary ml-auto" v-on:click="createNewWorkout()">Add Workout</button>
     </div>
   </div>
 </template>
