@@ -63,15 +63,12 @@ export default {
           this.$router.push("/login");
         })
         .catch(error => {
-<<<<<<< HEAD
           this.errors = error.response.data.errors;
           this.errors = ["Password and password confirmation do not match."];
           this.password_confirmation = "";
-=======
           this.errors = ["Invalid user information"];
           // this.errors = error.response.data.errors;
           this.email = "";
->>>>>>> 7e98154ccc4957b8c886877427f8131917fe4361
           this.password = "";
         });
     }
