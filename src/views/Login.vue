@@ -4,8 +4,6 @@
         <div id="login-spacing">
           <body>        
             <form v-on:submit.prevent="submit()">
-              <head>  
-              </head>
               <h1>Login</h1>
               <ul>
                 <li class="text-danger" v-for="error in errors">{{ error }}</li>
